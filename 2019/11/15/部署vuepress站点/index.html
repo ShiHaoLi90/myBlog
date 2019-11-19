@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuepress搭建及github站点部署 | 知</title>
+    <meta name="description" content="This is a blog example built by VuePress">
+    
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.f0b49781.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.cbaed40b.js" as="script"><link rel="preload" href="/myBlog/assets/js/4.1e879ed3.js" as="script"><link rel="preload" href="/myBlog/assets/js/5.37b532e0.js" as="script"><link rel="preload" href="/myBlog/assets/js/6.223d9a6f.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/1.aea266a1.js"><link rel="prefetch" href="/myBlog/assets/js/10.0d8da1fb.js"><link rel="prefetch" href="/myBlog/assets/js/11.d0b644cf.js"><link rel="prefetch" href="/myBlog/assets/js/12.f00c7ff2.js"><link rel="prefetch" href="/myBlog/assets/js/13.41fac7c0.js"><link rel="prefetch" href="/myBlog/assets/js/14.fa736fb5.js"><link rel="prefetch" href="/myBlog/assets/js/15.2ebecab5.js"><link rel="prefetch" href="/myBlog/assets/js/16.3f98523b.js"><link rel="prefetch" href="/myBlog/assets/js/7.65390cde.js"><link rel="prefetch" href="/myBlog/assets/js/8.dfdb0bc4.js"><link rel="prefetch" href="/myBlog/assets/js/9.fb553223.js"><link rel="prefetch" href="/myBlog/assets/js/vuejs-paginate.80fef016.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.f0b49781.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuperess-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/myBlog/" class="nav-link home-link">知
+        </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/myBlog/" class="nav-link">我的博客</a></li><li class="nav-item"><a href="/myBlog/tag/" class="nav-link">我的标签</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/myBlog/" class="nav-link mobile-home-link">知
+      </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/myBlog/" class="nav-link">我的博客</a></li><li class="mobile-nav-item"><a href="/myBlog/tag/" class="nav-link">我的标签</a></li></ul></div></div></div> <div class="content-wrapper"><div id="vuperess-theme-blog__post-layout"><div class="vuepress-blog-theme-content"><div class="content__default"><h1 id="vuepress搭建及github站点部署"><a href="#vuepress搭建及github站点部署" class="header-anchor">#</a> vuepress搭建及github站点部署</h1> <p>##项目搭建</p> <h3 id="_1-全局安装yarn"><a href="#_1-全局安装yarn" class="header-anchor">#</a> 1.全局安装yarn</h3> <p>yarn是NPM的替代品，也是js包管理工具，本教程以yarn包管理工具进行部署。
+命令如下：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install yarn -g
+</code></pre></div><p>验证是否安装成功,成功后显示版本，不成功则提示命令不存在</p> <div class="language- extra-class"><pre class="language-text"><code> yarn -v
+</code></pre></div><h3 id="_2-更改yarn配置（可选）"><a href="#_2-更改yarn配置（可选）" class="header-anchor">#</a> 2.更改yarn配置（可选）</h3> <p>如果您的网络环境较差的情况下，可以修改yarn的配置，使用淘宝镜像。</p> <div class="language- extra-class"><pre class="language-text"><code>yarn config set registry https://registry.npm.taobao.org
+</code></pre></div><h3 id="_3-创建vuepress"><a href="#_3-创建vuepress" class="header-anchor">#</a> 3.创建vuepress</h3> <p>使用如下命令</p> <div class="language- extra-class"><pre class="language-text"><code>yarn create vuepress
+</code></pre></div><p>如果安装较慢，或者安装时网络连接不上，进行第2步操作</p> <h3 id="_4-配置选择"><a href="#_4-配置选择" class="header-anchor">#</a> 4.配置选择</h3> <p>除了选择是创建博客还是文档，其他无关紧要的配置可以随意填写
+具体如图
+<img src="/myBlog/assets/img/1.e1743969.png" alt="配置选择">;
+<img src="/myBlog/assets/img/2.a3d0d653.png" alt="配置选择">;</p> <h3 id="_5-运行刚创建的项目"><a href="#_5-运行刚创建的项目" class="header-anchor">#</a> 5.运行刚创建的项目</h3> <div class="language- extra-class"><pre class="language-text"><code>yarn dev
+</code></pre></div><p>如果第4步选择的是blog时，直接运行yarn dev 会报错，解决办法是安装插件</p> <div class="language- extra-class"><pre class="language-text"><code>yarn install
+</code></pre></div><h3 id="_6-查看vuepress项目"><a href="#_6-查看vuepress项目" class="header-anchor">#</a> 6.查看vuepress项目</h3> <p>打开本地浏览器输入：<code>localhost:8080或者127.0.0.1：8080</code>查看效果</p> <h2 id="github站点发布"><a href="#github站点发布" class="header-anchor">#</a> github站点发布</h2> <h3 id="_1-在github上创建一个仓库"><a href="#_1-在github上创建一个仓库" class="header-anchor">#</a> 1.在github上创建一个仓库</h3> <p><img src="/myBlog/assets/img/3.559f26ae.png" alt="配置选择">;
+1.仓库名字
+2.初始化readme.md文件
+3.支持MIT许可</p> <h3 id="_2-项目根目录下创建一个-sh文件"><a href="#_2-项目根目录下创建一个-sh文件" class="header-anchor">#</a> 2.项目根目录下创建一个.sh文件</h3> <p>将需要的常用脚本写入到sh文件当中，后续执行sh文件，自动运行脚本</p> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+yarn build
+
+# 进入生成的文件夹
+cd blog/.vuepress/dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+git push -f git@github.com:xx/myBlog.git master:gh-pages
+# 链接远程仓库
+git remote add origin https://github.com/xx/myBlog.git
+#拉取远程仓库的文件
+git pull --rebase origin master
+#同步更新代码
+git push -u origin master
+cd -
+</code></pre></div><h3 id="_3-执行sh文件"><a href="#_3-执行sh文件" class="header-anchor">#</a> 3.执行sh文件</h3> <p>在xx.sh文件所在的目录下，鼠标右键，选择git bash here打开git bash 命令行执行sh文件</p> <div class="language- extra-class"><pre class="language-text"><code>sh xx.sh
+</code></pre></div><h3 id="_4-查看发布站点"><a href="#_4-查看发布站点" class="header-anchor">#</a> 4.查看发布站点</h3> <p>进入github》仓库》settings》github pages
+<img src="/myBlog/assets/img/4.02d6c49b.png" alt="配置选择">;</p> <h3 id="_5-访问站点"><a href="#_5-访问站点" class="header-anchor">#</a> 5.访问站点</h3> <p>效果图
+<img src="/myBlog/assets/img/5.0d3cff71.png" alt="配置选择">;</p></div> <hr> <!----></div> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h3 active"><a href="#_1-全局安装yarn" title="1.全局安装yarn">1.全局安装yarn</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_2-更改yarn配置（可选）" title="2.更改yarn配置（可选）">2.更改yarn配置（可选）</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-创建vuepress" title="3.创建vuepress">3.创建vuepress</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-配置选择" title="4.配置选择">4.配置选择</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_5-运行刚创建的项目" title="5.运行刚创建的项目">5.运行刚创建的项目</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_6-查看vuepress项目" title="6.查看vuepress项目">6.查看vuepress项目</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#github站点发布" title="github站点发布">github站点发布</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_1-在github上创建一个仓库" title="1.在github上创建一个仓库">1.在github上创建一个仓库</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_2-项目根目录下创建一个-sh文件" title="2.项目根目录下创建一个.sh文件">2.项目根目录下创建一个.sh文件</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-执行sh文件" title="3.执行sh文件">3.执行sh文件</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-查看发布站点" title="4.查看发布站点">4.查看发布站点</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_5-访问站点" title="5.访问站点">5.访问站点</a></div></div></div></div> <footer class="footer" data-v-0d113134><div class="footer-left-wrap" data-v-0d113134><ul class="contact" data-v-0d113134><li class="contact-item" data-v-0d113134><a href="https://github.com/ulivz" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-0d113134><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-0d113134></path></svg>
+          
+        </a></li><li class="contact-item" data-v-0d113134><a href="https://twitter.com/_ulivz" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-0d113134><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-0d113134></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-0d113134><ul class="copyright" data-v-0d113134><li class="copyright-item" data-v-0d113134><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134>Privacy Policy</a></li><li class="copyright-item" data-v-0d113134><a href="/myBlog/2019/11/15/%E9%83%A8%E7%BD%B2vuepress%E7%AB%99%E7%82%B9/.html" class="nav-link" data-v-0d113134>MIT Licensed | Copyright © 2018-present Vue.js</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.cbaed40b.js" defer></script><script src="/myBlog/assets/js/4.1e879ed3.js" defer></script><script src="/myBlog/assets/js/5.37b532e0.js" defer></script><script src="/myBlog/assets/js/6.223d9a6f.js" defer></script>
+  </body>
+</html>
